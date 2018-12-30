@@ -1,12 +1,13 @@
 const pkg = require('./package')
+const extendConfig = require('./webpack.config.extend')
 
 module.exports = {
   mode: 'spa',
   srcDir: 'src/',
 
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     title: pkg.name,
     meta: [
@@ -16,44 +17,45 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'
+      }
     ]
   },
 
   /*
-  ** Customize the progress-bar color
-  */
+   ** Customize the progress-bar color
+   */
   loading: { color: '#fff' },
 
   /*
-  ** Global CSS
-  */
-  css: [
-    '~/assets/style/app.styl'
-  ],
+   ** Global CSS
+   */
+  css: ['~/assets/style/app.styl'],
 
   /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-    '@/plugins/vuetify'
-  ],
+   ** Plugins to load before mounting the App
+   */
+  plugins: ['@/plugins/vuetify'],
 
   /*
-  ** Nuxt.js modules
-  */
-  modules: [
-  ],
+   ** Nuxt.js modules
+   */
+  modules: [],
 
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
-    /*
-    ** You can extend webpack config here
-    */
-    extend(config, ctx) {
-
+    extend(config) {
+      extendConfig(config)
     }
-  }
+  },
+
+  /*
+   ** Extensions
+   */
+  extensions: ['ts', 'js']
 }
