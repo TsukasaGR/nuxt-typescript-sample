@@ -93,9 +93,7 @@
         drawer: true,
         fixed: false,
         items: [
-          { icon: 'apps', title: 'Welcome', to: '/' },
-          { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' },
-          { icon: 'bubble_chart', title: 'TS Sample', to: '/ts_sample' }
+          { icon: 'apps', title: 'Welcome', to: '/' }
         ],
         miniVariant: false,
         right: true,
