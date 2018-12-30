@@ -5,6 +5,8 @@
     "strict": true,
     "module": "esnext",
     "moduleResolution": "node",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
     "esModuleInterop": true,
     "noImplicitThis": true,
     "experimentalDecorators": true, // vueでdecoratorを使った場合のエラー回避用1/2

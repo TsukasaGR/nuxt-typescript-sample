@@ -1,6 +1,4 @@
-// import sample2 from './sample2' // エラー出ない
-// import sample2 from 'src/modules/sample2' // エラー出ない
-import sample2 from '~/modules/sample2' // エラー出る
+import sample2 from '~/modules/sample2'
 
 export default function sample1(): string {
     console.log('sample1.ts passed!')
