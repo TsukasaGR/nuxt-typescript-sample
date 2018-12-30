@@ -1,18 +1,24 @@
 {
   "compilerOptions": {
     "sourceMap": true,
-    "target": "es5",
+    "target": "esnext",
     "strict": true,
     "module": "esnext",
     "moduleResolution": "node",
     "esModuleInterop": true,
     "noImplicitThis": true,
-    "experimentalDecorators": true,
-    "allowJs": true,
+    "experimentalDecorators": true, // vueでdecoratorを使った場合のエラー回避用1/2
+    "allowJs": true, // vueでdecoratorを使った場合のエラー回避用2/2
+    "noUnusedLocals": true, // 未使用のローカル変数をエラー報告する
+    "noUnusedParameters": true, // 未使用のパラメーターをエラー報告する
+    "noImplicitReturns": true, // 不正確なreturnをエラー報告する
+    "noFallthroughCasesInSwitch": true, // case文のフォールスルーをエラー報告する
     "baseUrl": ".",
     "lib": ["esnext", "dom"],
     "paths": {
       "@/*": ["src/*"]
-    }
-  }
+    },
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
