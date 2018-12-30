@@ -10,7 +10,7 @@
 import { Component, Prop, Vue } from 'nuxt-property-decorator'
 
 @Component
-export default class extends Vue {
+export default class Sample extends Vue {
   @Prop()
   propString!: string
   @Prop({ type: Number, required: true })
