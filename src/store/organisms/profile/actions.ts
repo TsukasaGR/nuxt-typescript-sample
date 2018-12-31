@@ -8,7 +8,7 @@ export const actions: ActionTree<ProfileState, RootState> = {
       firstName: 'firstName',
       lastName: 'lastName',
       email: 'sample@example.com',
-      phone: '09000000000'
+      phone: 11
     }
     commit(M_SET_PROFILE, payload)
   }

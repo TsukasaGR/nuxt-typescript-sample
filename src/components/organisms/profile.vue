@@ -21,10 +21,6 @@ export default class OrganismsProfile extends Vue {
   user!: User
   @Getter('fullName', { namespace: 'profile' })
   fullName!: string
-
-  fetch({ store }: { store: any }) {
-    store.dispatch('profile/fetchData')
-  }
 }
 </script>
 

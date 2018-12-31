@@ -7,7 +7,6 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-
 import OrganismsProfile from '~/components/organisms/profile.vue'
 
 @Component({
@@ -15,5 +14,9 @@ import OrganismsProfile from '~/components/organisms/profile.vue'
     OrganismsProfile
   }
 })
-export default class Index extends Vue {}
+export default class Index extends Vue {
+  fetch({ store }: { store: any }) {
+    store.dispatch('profile/fetchData')
+  }
+}
 </script>
