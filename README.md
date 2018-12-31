@@ -1,6 +1,7 @@
-# nuxt-typescript2
+# nuxt-typescript-sample
 
-> My slick Nuxt.js project
+Nuxtにtypescriptを導入したサンプルです。
+手順、説明等は順次更新していきます。(現時点ではまだ未作成)
 
 ## Build Setup
 
@@ -18,5 +19,3 @@ $ yarn start
 # generate static project
 $ yarn run generate
 ```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
