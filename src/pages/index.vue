@@ -3,13 +3,14 @@
     <h1>TSサンプルページ</h1>
     <p>{{ sampleVariableString }}</p>
     <p>{{ sampleVariableNumber }}</p>
-    <SampleComponent :prop-string="propString" :prop-number="propNumber"/>
+    <SampleComponent :prop-string="propString" :prop-number="propNumber" :prop-sample="propSample"/>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
 import sample1 from '~/modules/sample1'
+import { ISampleType } from '~/types/sample'
 
 import SampleComponent from '~/components/Sample.vue'
 
@@ -23,6 +24,10 @@ export default class Index extends Vue {
   sampleVariableNumber: number = 123
   propString: string = '子に渡す変数'
   propNumber: number = 345
+  propSample: ISampleType = {
+    valueString: '自作型String',
+    valueNumber: 567
+  }
 
   asyncData() {
     sample1()
