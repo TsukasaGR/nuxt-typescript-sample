@@ -37,7 +37,10 @@ export default class LayoutsDefault extends Vue {
   clipped: boolean = false
   drawer: boolean = false
   fixed: boolean = false
-  items: IItems[] = [{ icon: 'apps', title: 'Welcome', to: '/' }]
+  items: IItems[] = [
+    { icon: 'apps', title: 'Welcome', to: '/' },
+    { icon: 'apps', title: 'Vuex Test', to: '/vuex_test' }
+  ]
   miniVariant: boolean = false
   title: string = 'Vuetify.js'
 }
