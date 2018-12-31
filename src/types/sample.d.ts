@@ -1,4 +1,4 @@
 export interface ISampleType {
-    valueString: string
-    valueNumber: number
+  valueString: string
+  valueNumber: number
 }
