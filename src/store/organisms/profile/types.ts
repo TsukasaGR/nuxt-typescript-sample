@@ -6,7 +6,7 @@ export interface User {
 }
 
 export interface ProfileState {
-  user?: User
+  user: User
 }
 
 export const PROFILE_INIT_VALUE = {
@@ -15,5 +15,3 @@ export const PROFILE_INIT_VALUE = {
   email: '',
   phone: ''
 }
-
-export const M_SET_PROFILE = 'setProfile'

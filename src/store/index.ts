@@ -6,7 +6,6 @@ import { profile } from './organisms/profile/index'
 Vue.use(Vuex)
 
 const store: StoreOptions<RootState> = {
-  state: { version: '1.0.0' },
   modules: {
     profile
   }

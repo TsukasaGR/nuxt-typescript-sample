@@ -5,6 +5,8 @@
     <p>{{ user.email }}</p>
     <p>full name</p>
     <p>{{ fullName }}</p>
+    <p>phone</p>
+    <p>{{ user.phone }}</p>
   </div>
 </template>
 
