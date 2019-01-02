@@ -14,6 +14,8 @@
     "noImplicitThis": true, /* 暗黙の 'any'型で 'this'式のエラーを発生させます。 */
     "experimentalDecorators": true, // vueでdecoratorを使った場合のエラー回避用1/2
     "allowJs": true, // vueでdecoratorを使った場合のエラー回避用2/2
+    "checkJs": true,
+    "allowUnreachableCode": true,
     "noUnusedLocals": true, // 未使用のローカル変数をエラー報告する
     "noUnusedParameters": true, // 未使用のパラメーターをエラー報告する
     "noImplicitReturns": true, // 不正確なreturnをエラー報告する
