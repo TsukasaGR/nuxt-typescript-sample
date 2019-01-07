@@ -49,6 +49,10 @@ module.exports = {
     stylus: '~/assets/style/resources/*.styl'
   },
 
+  router: {
+    middleware: 'globalMiddleware'
+  },
+
   /*
    ** Build configuration
    */
