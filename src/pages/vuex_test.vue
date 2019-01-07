@@ -2,6 +2,7 @@
   <div>
     <h1>Vuexサンプルページ</h1>
     <OrganismsProfile/>
+    <v-btn color="success" @click="backToTop">TOPに戻る</v-btn>
   </div>
 </template>
 
@@ -17,6 +18,10 @@ import OrganismsProfile from '~/components/organisms/profile.vue'
 export default class Index extends Vue {
   fetch({ store }: { store: any }) {
     store.dispatch('profile/fetchData')
+  }
+
+  backToTop() {
+    this.$router.push('/')
   }
 }
 </script>
