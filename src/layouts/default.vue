@@ -39,7 +39,8 @@ export default class LayoutsDefault extends Vue {
   fixed: boolean = false
   items: IItems[] = [
     { icon: 'apps', title: 'Welcome', to: '/' },
-    { icon: 'apps', title: 'Vuex Test', to: '/vuex_test' }
+    { icon: 'apps', title: 'Vuex Test', to: '/vuex_test' },
+    { icon: 'apps', title: 'Style Test', to: '/style_test' }
   ]
   miniVariant: boolean = false
   title: string = 'Vuetify.js'
