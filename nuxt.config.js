@@ -46,10 +46,7 @@ module.exports = {
   modules: ['@nuxtjs/style-resources'],
 
   styleResources: {
-    stylus: [
-      '~/assets/style/variables.styl',
-      '~/assets/style/mixins.styl'
-    ]
+    stylus: '~/assets/style/resources/*.styl'
   },
 
   /*
