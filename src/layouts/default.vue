@@ -41,7 +41,8 @@ export default class LayoutsDefault extends Vue {
     { icon: 'apps', title: 'Welcome', to: '/' },
     { icon: 'apps', title: 'Vuex Test', to: '/vuex_test' },
     { icon: 'apps', title: 'Style Test', to: '/style_test' },
-    { icon: 'apps', title: 'Middleware Test', to: '/middleware_test' }
+    { icon: 'apps', title: 'Middleware Test', to: '/middleware_test' },
+    { icon: 'apps', title: 'Refs File Test', to: '/refs_file_test' }
   ]
   miniVariant: boolean = false
   title: string = 'Vuetify.js'
