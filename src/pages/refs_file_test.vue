@@ -15,18 +15,18 @@ export default class RefsFile extends Vue {
   img: string = require('~/assets/image/no_image.png')
 
   click() {
-    const file = <HTMLInputElement>this.$refs.inputFile
+    const file: HTMLInputElement = <HTMLInputElement>this.$refs.inputFile
     file.click()
   }
 
   change(event: Event) {
-    const target = <EventTarget>event.target
-    const files = (<HTMLInputElement>target).files
+    const target: EventTarget = <EventTarget>event.target
+    const files: FileList = <FileList>(<HTMLInputElement>target).files
     const fileReader: FileReader = new FileReader()
     fileReader.onload = () => {
       this.img = String(fileReader.result)
     }
-    fileReader.readAsDataURL((<FileList>files)[0])
+    fileReader.readAsDataURL((files)[0])
   }
 }
 </script>
