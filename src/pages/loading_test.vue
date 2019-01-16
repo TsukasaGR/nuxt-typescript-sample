@@ -1,0 +1,42 @@
+<template>
+  <div>
+    <h1>Loadingサンプルページ</h1>
+    <button type="button" @click="loading">ローディング表示</button>
+  </div>
+</template>
+
+<script lang="ts">
+import { Component, Vue } from 'nuxt-property-decorator'
+
+@Component
+export default class Index extends Vue {
+  async asyncData() {
+    const wait = (ms: number): Promise<null> => {
+      return new Promise(resolve => {
+        setTimeout(() => {
+          resolve()
+        }, ms)
+      })
+    }
+    await wait(1000)
+  }
+
+  loading() {
+    const wait = (ms: number): Promise<null> => {
+      return new Promise(resolve => {
+        setTimeout(() => {
+          resolve()
+        }, ms)
+      })
+    }
+
+    // @ts-ignore
+    this.$nuxt.$loading.start()
+
+    wait(1000).then(() => {
+      // @ts-ignore
+      this.$nuxt.$loading.finish()
+    })
+  }
+}
+</script>
