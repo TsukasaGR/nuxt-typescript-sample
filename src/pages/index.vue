@@ -12,7 +12,7 @@ import { Component, Vue } from 'nuxt-property-decorator'
 import sample1 from '~/modules/sample1'
 import { ISampleType } from '~/types/sample'
 
-import SampleComponent from '~/components/Sample.vue'
+import SampleComponent from '~/components/sample.vue'
 
 @Component({
   components: {
