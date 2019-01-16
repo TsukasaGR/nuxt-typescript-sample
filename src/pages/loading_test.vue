@@ -10,7 +10,7 @@ import { Component, Vue } from 'nuxt-property-decorator'
 
 @Component
 export default class Index extends Vue {
-  async asyncData() {
+  async asyncData(): Promise<void> {
     const wait = (ms: number): Promise<null> => {
       return new Promise(resolve => {
         setTimeout(() => {
@@ -21,8 +21,8 @@ export default class Index extends Vue {
     await wait(1000)
   }
 
-  loading() {
-    const wait = (ms: number): Promise<null> => {
+  async loading(): Promise<void> {
+    const wait = (ms: number): Promise<void> => {
       return new Promise(resolve => {
         setTimeout(() => {
           resolve()
@@ -33,7 +33,7 @@ export default class Index extends Vue {
     // @ts-ignore
     this.$nuxt.$loading.start()
 
-    wait(1000).then(() => {
+    await wait(1000).then(() => {
       // @ts-ignore
       this.$nuxt.$loading.finish()
     })
