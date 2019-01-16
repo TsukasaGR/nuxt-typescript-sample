@@ -40,3 +40,8 @@ export default class Index extends Vue {
   }
 }
 </script>
+<style lang="stylus" scoped>
+div {
+  min-height: 100vh;
+}
+</style>
