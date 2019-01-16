@@ -30,7 +30,6 @@ export default class Index extends Vue {
       })
     }
 
-    // @ts-ignore
     this.$nuxt.$loading.start()
 
     await wait(1000).then(() => {
